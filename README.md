@@ -81,12 +81,11 @@ The project follows a **Modular Architecture** with a clear **Layered Pattern** 
 src/
 ├── app.ts                      # Application entry point
 ├── config/                     # Configuration files
-│   ├── database.ts            # Database connection setup
-│   └── env.ts                 # Environment variables
+│   ├── db.ts          # Database connection setup
+│   └──index.ts             # Environment variables
 ├── middlewares/               # Custom middleware functions
-│   ├── authMiddleware.ts      # JWT verification
-│   ├── roleMiddleware.ts      # RBAC implementation
-│   └── errorHandler.ts        # Global error handling
+│   ├── auth.ts   # JWT verification
+│   ├── logger.ts    # RBAC implementation
 ├── modules/                   # Feature-based modules
 │   ├── auth/
 │   │   ├── auth.route.ts      # Authentication endpoints
@@ -104,12 +103,13 @@ src/
 │       ├── user.route.ts
 │       ├── user.controller.ts
 │       └── user.service.ts
-├── types/                     # TypeScript type definitions
+├── types/
+│── index.d.ts             
 ├── utils/                     # Helper functions
-│   ├── dateHelpers.ts
-│   ├── priceCalculator.ts
-│   └── validators.ts
-└── server.ts                  # Server initialization
+│   ├── lowercaseEmail.ts
+│   ├──role.ts 
+└── app.ts               # app initialization   
+└── server.ts           # Server initialization
 ```
 
 ### Layered Architecture
