@@ -556,9 +556,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Your Name**
 
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [Your Profile](https://linkedin.com/in/yourprofile)
-- Email: your.email@example.com
+- GitHub: [@yourusername](https://github.com/Robinishear)
+- LinkedIn: [Your Profile](https://www.linkedin.com/in/md-robin1/)
+- Email: mdrobinahmed57898@gmail.com
+
 
 ---
 
@@ -574,6 +575,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **⭐ Star this repository if you find it helpful!**
 
-Made with ❤️ by [Your Name]
+Made with ❤️ by [MR Robin Ahmed]
 
 </div>
