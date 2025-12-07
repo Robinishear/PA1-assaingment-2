@@ -38,14 +38,31 @@ A robust and secure backend API for managing a vehicle rental service. This syst
 | **Authentication**| **jsonwebtoken (JWT)** | | Token-based security mechanism. |
 
 ---
-
-## 🏗️ Architecture & Code Structure
-
-The project strictly follows a **Modular Architecture** with a clear **Layered Pattern** (Route -> Controller -> Service) to ensure **Separation of Concerns (SoC)** and easy maintenance.
-
-src/ ├── middlewares/ # Auth and Role-based Access Control (RBAC) ├── modules/ # Feature-based Modules (auth, users, vehicles, bookings) │ ├── [feature]/ │ │ ├── [feature].route.ts # Defines API Endpoints │ │ ├── [feature].controller.ts # Handles Request/Response, calls Service layer │ │ └── [feature].service.ts # Contains all business logic and database queries └── app.ts # Express setup and global middleware
-
-
+🏗️ Architecture & Code StructureThe project strictly follows a Modular Architecture with a clear Layered Pattern (Route $\to$ Controller $\to$ Service) to ensure Separation of Concerns (SoC) and easy maintenance. This structure organizes the codebase both by feature (modules) and by responsibility (layers).Code Structuresrc/
+├── app.ts                  # Entry Point: Sets up Express, global middlewares, and registers routes.
+├── config/                 # Application configuration (e.g., environment variables, DB config).
+├── middlewares/
+│   ├── authMiddleware.ts   # JWT verification and user extraction.
+│   └── roleMiddleware.ts   # Role-Based Access Control (RBAC) checks.
+├── modules/                # Core Feature Modules (Modular Architecture)
+│   ├── auth/
+│   │   ├── auth.route.ts
+│   │   ├── auth.controller.ts
+│   │   └── auth.service.ts
+│   ├── bookings/
+│   │   ├── booking.route.ts
+│   │   ├── booking.controller.ts
+│   │   └── booking.service.ts
+│   ├── users/
+│   │   ├── user.route.ts
+│   │   ├── user.controller.ts
+│   │   └── user.service.ts
+│   └── vehicles/
+│       ├── vehicle.route.ts
+│       ├── vehicle.controller.ts
+│       └── vehicle.service.ts
+└── utils/                  # Reusable utility functions (e.g., date helpers, price calculation).
+Layered Pattern BreakdownLayerFile TypeResponsibilityRoutes[feature].route.tsDefines the API endpoints (GET /vehicles, POST /bookings) and maps them to the correct Controller function.Controllers[feature].controller.tsHandles the incoming HTTP request, validates basic data, and sends data to the Service layer. Prepares the final HTTP response structure.Services[feature].service.tsContains all Business Logic (e.g., checking availability, calculating total price, database interactions). This is where the core functionality resides.
 
 ---
 
