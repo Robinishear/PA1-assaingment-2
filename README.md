@@ -556,8 +556,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Your Name**
 
-- GitHub: [@yourusername](https://github.com/Robinishear)
-- LinkedIn: [Your Profile](https://www.linkedin.com/in/md-robin1/)
+- GitHub: https://github.com/Robinishear
+- LinkedIn: https://www.linkedin.com/in/md-robin1/
 - Email: mdrobinahmed57898@gmail.com
 
 
