@@ -1,9 +1,8 @@
 API Response Structure (Common Responses)
 
-✨ GitHub README.md (Formatted for Professional Look)
-Markdown
 
-# 🚗 Vehicle Rental System API
+
+#  Vehicle Rental System API
 
 [![Node.js](https://img.shields.io/badge/Node.js-18+-success?logo=node.js)](https://nodejs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-Strongly%20Typed-blue?logo=typescript)](https://www.typescriptlang.org/)
