@@ -10,8 +10,11 @@ app.use(express.json());
 initDB();
 
 app.use("/api/v1/auth", authRouter);
+
 app.use("/api/v1/vehicles", vehiclesRouter);
+
 app.use("/api/v1/users", userRouter);
+
 app.use("/api/v1/bookings", bookingsRouter);
 
 //
